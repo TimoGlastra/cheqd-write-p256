@@ -1,0 +1,23 @@
+{
+	"name": "cheqd-write-p256",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@cheqd/sdk": "^2.4.4",
+		"@cheqd/ts-proto": "~2.2.0",
+		"@cosmjs/proto-signing": "^0.30.1",
+		"@hyperledger/aries-askar-nodejs": "^0.2.1"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.7",
+		"tsx": "^4.7.3",
+		"typescript": "^5.4.5"
+	}
+}
