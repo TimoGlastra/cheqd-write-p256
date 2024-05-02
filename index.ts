@@ -96,7 +96,9 @@ async function run() {
   const customSignInfo = [
     {
       signature: p256Key.signMessage({
-        message: payloadToSign,
+        // will be fixed in askar 0.2.2, not present in Credo,
+        // only when using askar directly
+        message: new Uint8Array(payloadToSign.buffer),
       }),
       verificationMethodId: `${did}#key-1`,
     },
